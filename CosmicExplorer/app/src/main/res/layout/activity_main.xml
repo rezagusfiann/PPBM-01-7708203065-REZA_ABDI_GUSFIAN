@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <!-- TabLayout and ViewPager Section -->
+    <RelativeLayout
+        android:id="@+id/tabViewPagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsLayout">
+
+        <!-- Add TabLayout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:layout_marginTop="16dp"
+            android:contentDescription="TabLayout for navigating between different tabs"/>
+
+        <!-- Add ViewPager2 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabLayout"
+            android:layout_marginTop="8dp"
+            android:contentDescription="ViewPager2 for displaying content associated with tabs"/>
+    </RelativeLayout>
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Show Bottom Sheet Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showBottomSheetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Bottom Sheet"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/cosmic_button_background"
+            android:contentDescription="Button to show the Bottom Sheet"/>
+
+        <!-- Show Snackbar Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showSnackbarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cosmic_button_background"
+            android:text="Show Snackbar"
+            android:contentDescription="Button to show the Snackbar"/>
+    </LinearLayout>
+
+</RelativeLayout>

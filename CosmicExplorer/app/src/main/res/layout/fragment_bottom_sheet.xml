@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Content for the Bottom Sheet -->
+    <TextView
+        android:id="@+id/bottomSheetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Cosmic Explorer!"/>
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/example_gray_on_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomSheetTextView"
+        android:elevation="6dp"
+        android:layout_marginTop="8dp"
+        app:area_margin="4dp"
+        app:animation_duration="250"
+        app:border_radius="2dp"
+        app:text="Testing all the custom attributes"
+        app:text_size="12sp"
+        app:slider_height="80dp"
+        app:slider_locked="false"
+        app:bounce_on_start="true" />
+    <!-- You can add more views as needed -->
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="3000"
+        android:layout_alignParentBottom="true"
+        app:iss_delay="0"/>
+
+    <!-- You can add additional views or indicators as needed -->
+
+</RelativeLayout>

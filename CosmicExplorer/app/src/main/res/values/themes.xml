@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme.CosmicExplorer" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#2c3e50</item>
+        <item name="colorPrimaryDark">#1a1a1a</item>
+        <item name="colorAccent">#FF4081</item>
+
+        <!-- Additional colors for enhancement -->
+        <item name="colorOnBackground">#0d0d0d</item>
+        <item name="android:colorForeground">#FFFFFF</item>s
+    </style>
+    <style name="CosmicButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/cosmic_button_background</item>
+        <item name="android:textColor">@color/colorForeground</item>
+        <!-- Add more attributes as needed, such as padding, elevation, etc. -->
+    </style>
+</resources>
